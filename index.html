@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INTEGER Desarrollos · Experiencia que da certeza</title>
+  <meta name="description" content="Constructora con más de 15 años de experiencia. Infraestructura, edificación habitacional e industrial, gerencia de proyecto y bienes raíces." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0F1114',
+            smoke: '#5F6672',
+            pale: '#F4F4F2',
+            gold: { DEFAULT: '#C9A227', light: '#D9BC5C', dark: '#A98727' },
+          },
+          fontFamily: {
+            heading: ['Archivo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+          },
+          letterSpacing: { wider2: '0.25em' },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-track { animation: marquee 28s linear infinite; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white font-body text-ink antialiased">
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-heading text-xl font-semibold tracking-[0.28em] text-ink">INTEGER<span class="text-gold">.</span></span>
+        <span class="hidden text-[10px] tracking-[0.35em] text-smoke sm:block">DESARROLLOS</span>
+      </a>
+      <button id="btn-menu" class="text-xl md:hidden" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#historia" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Quiénes somos</a>
+        <a href="#capacidades" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Capacidades</a>
+        <a href="#metodo" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Método</a>
+        <a href="#proyectos" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Proyectos</a>
+        <a href="#contacto" class="bg-ink px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-gold">Hablemos</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden border-t border-black/5 bg-white px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="#historia" class="text-sm font-semibold uppercase tracking-wider">Quiénes somos</a>
+        <a href="#capacidades" class="text-sm font-semibold uppercase tracking-wider">Capacidades</a>
+        <a href="#metodo" class="text-sm font-semibold uppercase tracking-wider">Método</a>
+        <a href="#proyectos" class="text-sm font-semibold uppercase tracking-wider">Proyectos</a>
+        <a href="#contacto" class="bg-ink px-5 py-3 text-center text-sm font-semibold uppercase tracking-wider text-white">Hablemos</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="px-5 pt-16 md:px-10 md:pt-24">
+      <div class="mx-auto max-w-4xl text-center reveal">
+        <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold">¿Quiénes somos?</p>
+        <h1 class="mt-5 font-heading text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+          Experiencia que da<br />
+          <span class="font-serif font-normal italic">certeza</span>
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-smoke md:text-lg">
+          Somos una empresa constructora con más de 15 años de experiencia, con raíces en Zihuatanejo y proyectos que trascienden en todo el país.
+        </p>
+      </div>
+
+      <div class="reveal mx-auto mt-12 max-w-7xl md:mt-16">
+        <div class="relative overflow-hidden rounded-none md:rounded-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2000&auto=format&fit=crop"
+            alt="Obra en construcción"
+            class="h-[52vh] w-full object-cover md:h-[72vh]"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-ink/10"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="flex h-28 w-28 items-center justify-center rounded-full border border-white/60">
+              <span class="text-center font-heading text-sm font-semibold tracking-[0.3em] text-white">INTEGER</span>
+            </div>
+          </div>
+          <p class="absolute bottom-5 left-6 text-[11px] font-semibold uppercase tracking-wider2 text-white/90 md:left-10">
+            <i class="fa-solid fa-location-dot mr-2 text-gold-light"></i> Cd. MX · Irapuato · Ixtapa–Zihuatanejo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HISTORIA ===================== -->
+    <section id="historia" class="scroll-mt-24 px-5 py-20 md:px-10 md:py-28">
+      <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
+        <div class="reveal md:sticky md:top-28 md:self-start">
+          <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold">Nuestra historia</p>
+          <h2 class="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl">
+            Raíces que nos dan <span class="font-serif italic">respaldo</span>
+          </h2>
+          <p class="mt-5 max-w-xs text-sm leading-relaxed text-smoke">
+            Toda esta historia nos da experiencia, respaldo técnico y empatía con las necesidades de cada cliente.
+          </p>
+        </div>
+        <div class="reveal space-y-6 text-[15px] leading-[1.9] text-ink/80 md:text-base">
+          <p>
+            Iniciamos creando <strong class="font-semibold">fraccionamientos de nivel medio alto y residencial</strong> y participamos desde nuestro primer año en los estudios de la
+            <strong class="font-semibold">Reserva Territorial de Zihuatanejo</strong>, entre otros grandes fraccionamientos de la ciudad. Ese mismo año fuimos invitados a la construcción de las
+            <strong class="font-semibold">obras de alcantarillado de la autopista Siglo XXI</strong> en su tramo de llegada a Ixtapa.
+          </p>
+          <p>
+            Con el <strong class="font-semibold">boom de las armadoras de automóviles japonesas en el Bajío</strong>, participamos en la supervisión y administración de grandes proyectos industriales y de servicios para marcas de renombre internacional en el Bajío, CD. México y el centro del país; mientras en paralelo, en el Estado de Guerrero, construimos obras viales, clínicas, escuelas, unidades deportivas e infraestructura agropecuaria, así como la recuperación de espacios urbanos.
+          </p>
+          <div class="border-l-2 border-gold pl-5 font-serif text-xl italic leading-snug text-ink md:text-2xl">
+            “Damos vida a tus ideas de inicio a fin.”
+          </div>
+          <div class="grid grid-cols-3 gap-4 pt-4">
+            <div>
+              <p class="font-heading text-3xl font-semibold md:text-4xl">15<span class="text-gold">+</span></p>
+              <p class="mt-1 text-[11px] font-semibold uppercase tracking-wider text-smoke">Años de experiencia</p>
+            </div>
+            <div>
+              <p class="font-heading text-3xl font-semibold md:text-4xl">03</p>
+              <p class="mt-1 text-[11px] font-semibold uppercase tracking-wider text-smoke">Ciudades</p>
+            </div>
+            <div>
+              <p class="font-heading text-3xl font-semibold md:text-4xl">06</p>
+              <p class="mt-1 text-[11px] font-semibold uppercase tracking-wider text-smoke">Líneas de servicio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="border-y border-black/5 bg-pale py-4 overflow-hidden">
+      <div class="marquee-track flex w-max items-center gap-10 whitespace-nowrap">
+        <span class="flex items-center gap-10">
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Fraccionamientos</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Obras industriales</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Autopista Siglo XXI</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Obras viales</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Agroindustria</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Espacios urbanos</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+        </span>
+        <span class="flex items-center gap-10" aria-hidden="true">
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Fraccionamientos</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Obras industriales</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Autopista Siglo XXI</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Obras viales</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Agroindustria</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider2 text-ink/60">Espacios urbanos</span><i class="fa-solid fa-circle text-[5px] text-gold"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- ===================== CAPACIDADES ===================== -->
+    <section id="capacidades" class="scroll-mt-24 px-5 py-20 md:px-10 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-2xl reveal">
+          <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold">Experiencia que da certeza</p>
+          <h2 class="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-5xl">
+            Lo que hacemos, <span class="font-serif italic">bien hecho</span>
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="reveal group border border-black/10 p-7 transition hover:border-gold md:p-9">
+            <i class="fa-solid fa-city text-xl text-gold"></i>
+            <p class="mt-8 text-[11px] font-semibold tracking-wider2 text-smoke">01</p>
+            <h3 class="mt-2 font-heading text-lg font-semibold">Diseño Urbano</h3>
+            <p class="mt-3 text-sm leading-relaxed text-smoke">Planeación y recuperación de espacios urbanos que transforman tu ciudad.</p>
+          </div>
+          <div class="reveal group border border-black/10 p-7 transition hover:border-gold md:p-9">
+            <i class="fa-solid fa-road text-xl text-gold"></i>
+            <p class="mt-8 text-[11px] font-semibold tracking-wider2 text-smoke">02</p>
+            <h3 class="mt-2 font-heading text-lg font-semibold">Construcción de Infraestructura</h3>
+            <p class="mt-3 text-sm leading-relaxed text-smoke">Obras viales, de servicios y alcantarillado desde el estudio hasta la entrega.</p>
+          </div>
+          <div class="reveal group border border-black/10 p-7 transition hover:border-gold md:p-9">
+            <i class="fa-solid fa-house-chimney text-xl text-gold"></i>
+            <p class="mt-8 text-[11px] font-semibold tracking-wider2 text-smoke">03</p>
+            <h3 class="mt-2 font-heading text-lg font-semibold">Edificación Habitacional</h3>
+            <p class="mt-3 text-sm leading-relaxed text-smoke">Viviendas horizontales y verticales que facilitan la vida de las familias.</p>
+          </div>
+          <div class="reveal group border border-black/10 p-7 transition hover:border-gold md:p-9">
+            <i class="fa-solid fa-industry text-xl text-gold"></i>
+            <p class="mt-8 text-[11px] font-semibold tracking-wider2 text-smoke">04</p>
+            <h3 class="mt-2 font-heading text-lg font-semibold">Obras Industriales</h3>
+            <p class="mt-3 text-sm leading-relaxed text-smoke">Diseño y construcción para marcas de renombre internacional.</p>
+          </div>
+          <div class="reveal group border border-black/10 p-7 transition hover:border-gold md:p-9">
+            <i class="fa-solid fa-clipboard-check text-xl text-gold"></i>
+            <p class="mt-8 text-[11px] font-semibold tracking-wider2 text-smoke">05</p>
+            <h3 class="mt-2 font-heading text-lg font-semibold">Gerencia de Proyecto</h3>
+            <p class="mt-3 text-sm leading-relaxed text-smoke">Supervisión y administración con indicadores de desempeño en tiempo real.</p>
+          </div>
+          <div class="reveal group border border-black/10 p-7 transition hover:border-gold md:p-9">
+            <i class="fa-solid fa-key text-xl text-gold"></i>
+            <p class="mt-8 text-[11px] font-semibold tracking-wider2 text-smoke">06</p>
+            <h3 class="mt-2 font-heading text-lg font-semibold">Bienes Raíces</h3>
+            <p class="mt-3 text-sm leading-relaxed text-smoke">Desarrollo y comercialización de fraccionamientos de nivel medio alto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MÉTODO ===================== -->
+    <section id="metodo" class="scroll-mt-24 bg-ink px-5 py-20 text-white md:px-10 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div class="reveal">
+            <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold-light">Métodos y tecnología</p>
+            <h2 class="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl">
+              Metodologías de nivel <span class="font-serif italic">global</span>
+            </h2>
+            <p class="mt-6 text-[15px] leading-[1.9] text-white/70">
+              Nuestros colaboradores están capacitados con las metodologías de administración, diseño y ejecución más actuales a nivel global. Ponemos la tecnología a tu servicio para conocer los avances de tu inversión en tiempo real, con indicadores de desempeño que dan certeza en cada etapa del proyecto.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <span class="rounded-full border border-gold-light/50 px-5 py-2 text-xs font-bold uppercase tracking-wider2 text-gold-light">PMI</span>
+              <span class="rounded-full border border-gold-light/50 px-5 py-2 text-xs font-bold uppercase tracking-wider2 text-gold-light">LEAN</span>
+              <span class="rounded-full border border-gold-light/50 px-5 py-2 text-xs font-bold uppercase tracking-wider2 text-gold-light">BIM</span>
+              <span class="rounded-full border border-gold-light/50 px-5 py-2 text-xs font-bold uppercase tracking-wider2 text-gold-light">VDC</span>
+            </div>
+            <div class="mt-10 border-t border-white/10 pt-8">
+              <p class="text-[11px] font-semibold uppercase tracking-wider2 text-white/50">Oficinas</p>
+              <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                <p class="flex items-center gap-3 text-sm text-white/85"><i class="fa-solid fa-location-dot text-gold-light"></i> Cd. México</p>
+                <p class="flex items-center gap-3 text-sm text-white/85"><i class="fa-solid fa-location-dot text-gold-light"></i> Irapuato, Gto.</p>
+                <p class="flex items-center gap-3 text-sm text-white/85"><i class="fa-solid fa-location-dot text-gold-light"></i> Ixtapa–Zihuatanejo</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal grid gap-5 sm:grid-cols-2">
+            <div class="rounded-xl bg-white/[0.04] p-7">
+              <p class="font-heading text-2xl font-semibold text-gold-light">PMI</p>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">Buenas prácticas en administración de proyectos para entregar a tiempo y sin desviaciones.</p>
+            </div>
+            <div class="rounded-xl bg-white/[0.04] p-7">
+              <p class="font-heading text-2xl font-semibold text-gold-light">LEAN</p>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">Filosofía de eficiencia que elimina desperdicio en cada proceso de obra.</p>
+            </div>
+            <div class="rounded-xl bg-white/[0.04] p-7">
+              <p class="font-heading text-2xl font-semibold text-gold-light">BIM</p>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">Modelado digital que integra diseño, construcción y operación de tu proyecto.</p>
+            </div>
+            <div class="rounded-xl bg-white/[0.04] p-7">
+              <p class="font-heading text-2xl font-semibold text-gold-light">VDC</p>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">Simulación y control virtual para conocer el avance de tu inversión en tiempo real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISIÓN · VISIÓN · VALORES ===================== -->
+    <section id="mision" class="scroll-mt-24 px-5 py-20 md:px-10 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal text-center">
+          <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold">Lo que nos mueve</p>
+          <h2 class="mt-4 font-heading text-3xl font-semibold sm:text-5xl">Misión · Visión · <span class="font-serif italic">Valores</span></h2>
+        </div>
+
+        <div class="mt-12 grid gap-5 lg:grid-cols-3">
+          <div class="reveal border border-black/10 p-8 md:p-10">
+            <i class="fa-solid fa-bullseye text-2xl text-gold"></i>
+            <h3 class="mt-6 font-heading text-lg font-semibold uppercase tracking-wider">Misión</h3>
+            <p class="mt-4 text-[15px] leading-[1.9] text-smoke">
+              Diseñamos y construimos infraestructura, viviendas, edificios y espacios urbanos que facilitan la vida de las familias y hacen más eficientes a las industrias.
+            </p>
+          </div>
+          <div class="reveal border border-black/10 p-8 md:p-10">
+            <i class="fa-solid fa-eye text-2xl text-gold"></i>
+            <h3 class="mt-6 font-heading text-lg font-semibold uppercase tracking-wider">Visión</h3>
+            <p class="mt-4 text-[15px] leading-[1.9] text-smoke">
+              Ser el referente de la industria bajo la filosofía Monozukuri, creando beneficios para nuestra comunidad.
+            </p>
+            <p class="mt-6 inline-block rounded-full border border-gold/40 px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider2 text-gold">Monozukuri · ものづくり</p>
+          </div>
+          <div class="reveal border border-black/10 p-8 md:p-10">
+            <i class="fa-solid fa-handshake text-2xl text-gold"></i>
+            <h3 class="mt-6 font-heading text-lg font-semibold uppercase tracking-wider">Valores</h3>
+            <ul class="mt-4 space-y-4">
+              <li>
+                <p class="text-sm font-semibold text-ink">Integridad</p>
+                <p class="mt-1 text-sm leading-relaxed text-smoke">Actuar con honestidad, transparencia y rectitud en cada negociación.</p>
+              </li>
+              <li>
+                <p class="text-sm font-semibold text-ink">Responsabilidad</p>
+                <p class="mt-1 text-sm leading-relaxed text-smoke">Cumplir los compromisos y asumir las consecuencias de nuestros actos.</p>
+              </li>
+              <li>
+                <p class="text-sm font-semibold text-ink">Transparencia</p>
+                <p class="mt-1 text-sm leading-relaxed text-smoke">Compartir información de manera clara y abierta con colaboradores y clientes.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPO ===================== -->
+    <section id="equipo" class="scroll-mt-24 border-y border-black/5 bg-pale px-5 py-20 md:px-10 md:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+        <div class="reveal grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900&auto=format&fit=crop" alt="Equipo de trabajo" class="h-56 w-full rounded-xl object-cover md:h-72" />
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=900&auto=format&fit=crop" alt="Ingeniero" class="mt-8 h-56 w-full rounded-xl object-cover md:h-72" />
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=900&auto=format&fit=crop" alt="Arquitecta" class="h-56 w-full rounded-xl object-cover md:h-72" />
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=900&auto=format&fit=crop" alt="Arquitecto" class="mt-8 h-56 w-full rounded-xl object-cover md:h-72" />
+        </div>
+        <div class="reveal">
+          <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold">Nuestro equipo</p>
+          <h2 class="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl">
+            Ingenieros y <span class="font-serif italic">arquitectos</span>
+          </h2>
+          <p class="mt-6 text-[15px] leading-[1.9] text-smoke md:text-base">
+            Somos un grupo de colaboradores altamente capacitados, con amplia experiencia y en constante actualización, con una gran sensibilidad para brindar soluciones que aporten valor a tus proyectos.
+          </p>
+          <a href="#contacto" class="mt-8 inline-flex items-center gap-3 bg-ink px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-gold">
+            Trabaja con nosotros <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section id="proyectos" class="scroll-mt-24 px-5 py-20 md:px-10 md:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold">Portafolio</p>
+            <h2 class="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-5xl">
+              Proyectos que <span class="font-serif italic">trascienden</span>
+            </h2>
+          </div>
+          <p class="max-w-xs text-sm leading-relaxed text-smoke">Una selección de obras en Zihuatanejo, Guerrero y el Bajío, construidas con los más altos estándares.</p>
+        </div>
+
+        <div class="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3">
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Fraccionamiento residencial" class="h-72 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Habitacional</p>
+              <p class="text-sm font-semibold text-white">Fraccionamiento residencial — Zihuatanejo</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Obra industrial" class="h-96 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Industrial</p>
+              <p class="text-sm font-semibold text-white">Planta industrial — Bajío</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?q=80&w=1200&auto=format&fit=crop" alt="Autopista Siglo XXI" class="h-64 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Infraestructura</p>
+              <p class="text-sm font-semibold text-white">Alcantarillado Autopista Siglo XXI — Ixtapa</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" alt="Vivienda residencial" class="h-80 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Habitacional</p>
+              <p class="text-sm font-semibold text-white">Vivienda residencial — Ixtapa</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?q=80&w=1200&auto=format&fit=crop" alt="Espacio urbano" class="h-64 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Urbano</p>
+              <p class="text-sm font-semibold text-white">Recuperación de espacios urbanos — Guerrero</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop" alt="Residencial de lujo" class="h-96 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Residencial</p>
+              <p class="text-sm font-semibold text-white">Residencial nivel medio alto — Zihuatanejo</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1200&auto=format&fit=crop" alt="Edificación corporativa" class="h-72 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Corporativo</p>
+              <p class="text-sm font-semibold text-white">Edificio de servicios — Cd. México</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop" alt="Clínica" class="h-80 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Equipamiento</p>
+              <p class="text-sm font-semibold text-white">Clínica y equipamiento — Guerrero</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop" alt="Unidad deportiva" class="h-64 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 pt-12 opacity-0 transition duration-500 group-hover:opacity-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider2 text-gold-light">Educativo / Deportivo</p>
+              <p class="text-sm font-semibold text-white">Unidad deportiva y escuelas — Guerrero</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section id="contacto" class="scroll-mt-24 relative overflow-hidden bg-ink px-5 py-20 text-white md:px-10 md:py-28">
+      <p aria-hidden="true" class="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-heading text-[22vw] font-bold leading-none tracking-[0.2em] text-white/[0.04] md:text-[14rem]">INTEGER</p>
+      <div class="relative mx-auto max-w-4xl text-center reveal">
+        <p class="text-[11px] font-semibold uppercase tracking-wider2 text-gold-light">Hablemos de tu proyecto</p>
+        <h2 class="mt-5 font-heading text-4xl font-semibold leading-[1.05] sm:text-6xl">
+          Construimos <span class="font-serif italic text-gold-light">tu futuro</span>
+        </h2>
+        <p class="mx-auto mt-6 max-w-md text-[15px] leading-relaxed text-white/65">
+          Confía tu proyecto a expertos en administración de construcción. Oficinas en Cd. México, Irapuato e Ixtapa–Zihuatanejo.
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="tel:+525512345678" class="flex w-full items-center justify-center gap-3 bg-gold px-8 py-4 text-xs font-bold uppercase tracking-wider2 text-ink transition hover:bg-gold-light sm:w-auto">
+            <i class="fa-solid fa-phone text-base"></i> 55 1234 5678
+          </a>
+          <a href="mailto:contacto@integerdesarrollos.com" class="flex w-full items-center justify-center gap-3 border border-white/25 px-8 py-4 text-xs font-bold uppercase tracking-wider2 text-white transition hover:border-gold-light hover:text-gold-light sm:w-auto">
+            <i class="fa-solid fa-envelope text-base"></i> contacto@integerdesarrollos.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-black/5 bg-white px-5 py-10 md:px-10">
+    <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 text-center md:flex-row md:justify-between md:text-left">
+      <div>
+        <p class="font-heading text-lg font-semibold tracking-[0.28em]">INTEGER<span class="text-gold">.</span></p>
+        <p class="mt-1 text-[10px] tracking-[0.35em] text-smoke">DESARROLLOS · CONSTRUIMOS FUTURO</p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold uppercase tracking-wider text-ink/70">
+        <a href="#historia" class="transition hover:text-gold">Quiénes somos</a>
+        <a href="#capacidades" class="transition hover:text-gold">Capacidades</a>
+        <a href="#proyectos" class="transition hover:text-gold">Proyectos</a>
+        <a href="#contacto" class="transition hover:text-gold">Contacto</a>
+      </div>
+      <p class="flex items-center gap-2 text-xs text-smoke">
+        <i class="fa-solid fa-location-dot text-gold"></i> Cd. MX · Irapuato · Ixtapa–Zihuatanejo
+      </p>
+    </div>
+    <div class="mx-auto mt-8 flex max-w-7xl flex-col items-center justify-between gap-2 border-t border-black/5 pt-6 text-[11px] text-smoke md:flex-row">
+      <p>© 2026 INTEGER Desarrollos. Todos los derechos reservados.</p>
+      <p class="font-serif italic">Experiencia que da certeza.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('btn-menu');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); observer.unobserve(e.target); } }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
