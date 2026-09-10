@@ -17,3 +17,6 @@ indicaciones.txt
 # Recursos de marca (tarjetas, etc., no forman parte del sitio)
 brand/
 brand.rar
+
+# Build output (Cloudflare Pages genera esto en el deploy)
+dist/

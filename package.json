@@ -4,7 +4,8 @@
   "private": true,
   "description": "Landing page INTEGER Desarrollos",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify"
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "build:dist": "node scripts/build-dist.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
