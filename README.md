@@ -18,7 +18,7 @@ Sitio web de una sola página para **INTEGER Desarrollos**, constructora con má
 │   │   └── styles.css      # Estilos personalizados
 │   ├── js/
 │   │   └── main.js         # Lógica (menú, reveal, modal)
-│   ├── images/             # Imágenes del portafolio (01–10)
+│   ├── images/             # Imágenes del sitio y del portafolio
 │   └── videos/             # Renders de proyectos
 ├── .gitignore
 └── README.md
@@ -43,5 +43,5 @@ Sitio web de una sola página para **INTEGER Desarrollos**, constructora con má
 
 ## Notas
 
-- Antes de publicar, actualiza el **número de WhatsApp** y el `tel:` en `index.html` (actualmente usa un placeholder).
+- El teléfono y el WhatsApp se configuran en el `index.html` (`tel:` y `wa.me`).
 - El `tailwind.config` se configura inline en el `<head>` (requerido por el Play CDN de Tailwind).

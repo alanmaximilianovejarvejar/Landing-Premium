@@ -13,3 +13,7 @@ npm-debug.log*
 
 # Notas internas (no forman parte del sitio)
 indicaciones.txt
+
+# Recursos de marca (tarjetas, etc., no forman parte del sitio)
+brand/
+brand.rar
