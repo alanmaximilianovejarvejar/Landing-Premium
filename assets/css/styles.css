@@ -1,0 +1,43 @@
+html { scroll-behavior: smooth; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track { animation: marquee 28s linear infinite; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cap-card { cursor: pointer; }
+
+#modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+#modal.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#modal .modal-card {
+  transform: translateY(20px) scale(.98);
+  transition: transform .35s ease;
+}
+
+#modal.open .modal-card {
+  transform: translateY(0) scale(1);
+}
