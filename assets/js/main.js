@@ -46,3 +46,19 @@ document.getElementById('modal-cta').addEventListener('click', closeModal);
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
+
+const videos = document.querySelectorAll('video');
+if (videos.length) {
+  const videoObserver = new IntersectionObserver(
+    (entries) => entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }),
+    { rootMargin: '150px 0px' }
+  );
+  videos.forEach((video) => videoObserver.observe(video));
+}

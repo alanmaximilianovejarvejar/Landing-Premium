@@ -6,35 +6,11 @@
   <title>INTEGER Desarrollos · Experiencia que da certeza</title>
   <meta name="description" content="Constructora con más de 15 años de experiencia. Infraestructura, edificación habitacional e industrial, gerencia de proyecto y bienes raíces." />
   <meta name="theme-color" content="#0F1114" />
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preload" href="assets/fonts/archivo-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" as="image" href="assets/images/hero.jpg" fetchpriority="high" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0F1114',
-            smoke: '#5F6672',
-            pale: '#F4F4F2',
-            gold: { DEFAULT: '#C9A227', light: '#D9BC5C', dark: '#A98727' },
-          },
-          fontFamily: {
-            heading: ['Archivo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
-          },
-          letterSpacing: { wider2: '0.25em' },
-        },
-      },
-    };
-  </script>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="bg-white font-body text-ink antialiased">
 
@@ -359,7 +335,7 @@
             </figcaption>
           </figure>
           <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
-            <video src="assets/videos/Proyecto-playa.mp4" class="h-72 w-full object-cover" autoplay muted loop playsinline preload="metadata" aria-label="Render de proyecto frente al mar"></video>
+            <video src="assets/videos/Proyecto-playa.mp4" class="h-72 w-full object-cover" muted loop playsinline preload="none" aria-label="Render de proyecto frente al mar"></video>
             <div class="pointer-events-none absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink/60 text-gold-light">
               <i class="fa-solid fa-play text-xs"></i>
             </div>
@@ -387,7 +363,7 @@
             </figcaption>
           </figure>
           <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
-            <video src="assets/videos/Poryectos-destacados.mp4" class="h-96 w-full object-cover" autoplay muted loop playsinline preload="metadata" aria-label="Render de proyectos destacados"></video>
+            <video src="assets/videos/Poryectos-destacados.mp4" class="h-96 w-full object-cover" muted loop playsinline preload="none" aria-label="Render de proyectos destacados"></video>
             <div class="pointer-events-none absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink/60 text-gold-light">
               <i class="fa-solid fa-play text-xs"></i>
             </div>

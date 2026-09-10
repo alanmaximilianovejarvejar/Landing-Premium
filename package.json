@@ -1,0 +1,12 @@
+{
+  "name": "integer-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page INTEGER Desarrollos",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
