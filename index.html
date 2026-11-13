@@ -12,42 +12,15 @@
   <meta property="og:site_name" content="INTEGER Desarrollos" />
   <meta property="og:title" content="INTEGER Desarrollos · Experiencia que da certeza" />
   <meta property="og:description" content="Constructora con más de 15 años de experiencia. Infraestructura, edificación habitacional e industrial, gerencia de proyecto y bienes raíces." />
-  <meta property="og:image" content="https://alanmaximilianovejarvejar.github.io/Landing-Premium/assets/images/og-image.jpg" />
-  <meta property="og:url" content="https://alanmaximilianovejarvejar.github.io/Landing-Premium/" />
+  <meta property="og:image" content="https://integer-desarrollos.com/assets/images/og-image.jpg" />
+  <meta property="og:url" content="https://integer-desarrollos.com/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="INTEGER Desarrollos · Experiencia que da certeza" />
   <meta name="twitter:description" content="Constructora con más de 15 años de experiencia. Infraestructura, edificación habitacional e industrial, gerencia de proyecto y bienes raíces." />
-  <meta name="twitter:image" content="https://alanmaximilianovejarvejar.github.io/Landing-Premium/assets/images/og-image.jpg" />
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
-  <link rel="preconnect" href="https://images.pexels.com" crossorigin />
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2000&auto=format&fit=crop" fetchpriority="high" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0F1114',
-            smoke: '#5F6672',
-            pale: '#F4F4F2',
-            gold: { DEFAULT: '#C9A227', light: '#D9BC5C', dark: '#A98727' },
-          },
-          fontFamily: {
-            heading: ['Archivo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
-          },
-          letterSpacing: { wider2: '0.25em' },
-        },
-      },
-    };
-  </script>
+  <meta name="twitter:image" content="https://integer-desarrollos.com/assets/images/og-image.jpg" />
+  <link rel="preload" href="assets/fonts/archivo-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" href="assets/images/hero.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
@@ -56,17 +29,17 @@
   <!-- ===================== NAV ===================== -->
   <nav class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
-      <a href="#top" class="flex items-baseline gap-2">
+      <a href="#top" class="flex shrink-0 items-baseline gap-2">
         <span class="font-heading text-xl font-semibold tracking-[0.28em] text-ink">INTEGER<span class="text-gold">.</span></span>
-        <span class="hidden text-[10px] tracking-[0.35em] text-smoke sm:block">DESARROLLOS</span>
+        <span class="hidden text-[10px] tracking-[0.35em] text-smoke min-[870px]:block">DESARROLLOS</span>
       </a>
       <button id="btn-menu" class="text-xl md:hidden" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
-      <div class="hidden items-center gap-8 md:flex">
-        <a href="#historia" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Quiénes somos</a>
-        <a href="#capacidades" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Capacidades</a>
-        <a href="#metodo" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Método</a>
-        <a href="#proyectos" class="text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Proyectos</a>
-        <a href="#contacto" class="bg-ink px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-gold">Hablemos</a>
+      <div class="hidden shrink-0 items-center gap-4 md:flex lg:gap-8">
+        <a href="#historia" class="whitespace-nowrap text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Quiénes somos</a>
+        <a href="#capacidades" class="whitespace-nowrap text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Capacidades</a>
+        <a href="#metodo" class="whitespace-nowrap text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Método</a>
+        <a href="#proyectos" class="whitespace-nowrap text-xs font-semibold uppercase tracking-wider text-ink/80 transition hover:text-gold">Proyectos</a>
+        <a href="#contacto" class="whitespace-nowrap bg-ink px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-gold">Hablemos</a>
       </div>
     </div>
     <div id="mobile-menu" class="hidden border-t border-black/5 bg-white px-5 py-4 md:hidden">
@@ -98,7 +71,7 @@
       <div class="reveal mx-auto mt-12 max-w-7xl md:mt-16">
         <div class="relative overflow-hidden rounded-none md:rounded-2xl">
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2000&auto=format&fit=crop"
+            src="assets/images/hero.jpg"
             alt="Obra en construcción"
             fetchpriority="high"
             class="h-[52vh] w-full object-cover md:h-[72vh]"
@@ -240,7 +213,7 @@
             <h3 class="mt-2 font-heading text-lg font-semibold">Construcción de Infraestructura</h3>
             <p class="mt-3 text-sm leading-relaxed text-smoke">Obras viales, Infraestructura y alcantarillado desde el estudio hasta la entrega.</p>
           </div>
-          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="03" data-icon="fa-house-chimney" data-title="Edificación Habitacional" data-desc="Desarrollamos viviendas horizontales y verticales con altos estándares de confort, seguridad y eficiencia que facilitan la vida de las familias." data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="03" data-icon="fa-house-chimney" data-title="Edificación Habitacional" data-desc="Desarrollamos viviendas horizontales y verticales con altos estándares de confort, seguridad y eficiencia que facilitan la vida de las familias." data-img="assets/images/habitacional.jpg">
             <div class="flex items-start justify-between">
               <i class="fa-solid fa-house-chimney text-xl text-gold"></i>
               <i class="fa-solid fa-arrow-up-right-from-square text-sm text-smoke opacity-0 transition group-hover:opacity-100"></i>
@@ -249,7 +222,7 @@
             <h3 class="mt-2 font-heading text-lg font-semibold">Edificación Habitacional</h3>
             <p class="mt-3 text-sm leading-relaxed text-smoke">Viviendas horizontales y verticales que facilitan la vida de las familias.</p>
           </div>
-          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="04" data-icon="fa-industry" data-title="Obras Industriales" data-desc="Diseño y construcción de proyectos industriales y de servicios para marcas de renombre internacional, con procesos de clase mundial." data-img="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?q=80&w=1200&auto=format&fit=crop">
+          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="04" data-icon="fa-industry" data-title="Obras Industriales" data-desc="Diseño y construcción de proyectos industriales y de servicios para marcas de renombre internacional, con procesos de clase mundial." data-img="assets/images/industrial.jpg">
             <div class="flex items-start justify-between">
               <i class="fa-solid fa-industry text-xl text-gold"></i>
               <i class="fa-solid fa-arrow-up-right-from-square text-sm text-smoke opacity-0 transition group-hover:opacity-100"></i>
@@ -258,7 +231,7 @@
             <h3 class="mt-2 font-heading text-lg font-semibold">Obras Industriales</h3>
             <p class="mt-3 text-sm leading-relaxed text-smoke">Diseño y construcción de proyectos Industriales</p>
           </div>
-          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="05" data-icon="fa-clipboard-check" data-title="Gerencia de Proyecto" data-desc="Supervisión y administración integral con indicadores de desempeño en tiempo real, aplicando metodologías PMI, LEAN, BIM y VDC." data-img="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1200&auto=format&fit=crop">
+          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="05" data-icon="fa-clipboard-check" data-title="Gerencia de Proyecto" data-desc="Supervisión y administración integral con indicadores de desempeño en tiempo real, aplicando metodologías PMI, LEAN, BIM y VDC." data-img="assets/images/gerencia.jpg">
             <div class="flex items-start justify-between">
               <i class="fa-solid fa-clipboard-check text-xl text-gold"></i>
               <i class="fa-solid fa-arrow-up-right-from-square text-sm text-smoke opacity-0 transition group-hover:opacity-100"></i>
@@ -267,7 +240,7 @@
             <h3 class="mt-2 font-heading text-lg font-semibold">Gerencia de Proyecto</h3>
             <p class="mt-3 text-sm leading-relaxed text-smoke">Supervisión y administración con indicadores de desempeño en tiempo real.</p>
           </div>
-          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="06" data-icon="fa-key" data-title="Bienes Raíces" data-desc="Desarrollo y comercialización de residencias, fraccionamientos Residenciales de nivel popular, medio, alto e Industriales, con respaldo técnico y visión de futuro. Para asegurar la rentabilidad de su inversión." data-img="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop">
+          <div class="reveal group cap-card border border-black/10 p-7 transition hover:border-gold md:p-9" data-num="06" data-icon="fa-key" data-title="Bienes Raíces" data-desc="Desarrollo y comercialización de residencias, fraccionamientos Residenciales de nivel popular, medio, alto e Industriales, con respaldo técnico y visión de futuro. Para asegurar la rentabilidad de su inversión." data-img="assets/images/bienes-raices.jpg">
             <div class="flex items-start justify-between">
               <i class="fa-solid fa-key text-xl text-gold"></i>
               <i class="fa-solid fa-arrow-up-right-from-square text-sm text-smoke opacity-0 transition group-hover:opacity-100"></i>
@@ -333,9 +306,9 @@
     <section id="equipo" class="scroll-mt-24 border-y border-black/5 bg-pale px-5 py-20 md:px-10 md:py-28">
       <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
         <div class="reveal grid grid-cols-2 gap-4">
-          <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/12314551/pexels-photo-12314551.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Obrero con casco de construcción" class="h-56 w-full rounded-xl object-cover md:h-72" />
-          <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/4161604/pexels-photo-4161604.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Equipo en obra con casco y chaleco de seguridad" class="mt-8 h-56 w-full rounded-xl object-cover md:h-72" />
-          <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/6615107/pexels-photo-6615107.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Diseñador realizando un render de proyecto" class="h-56 w-full rounded-xl object-cover md:h-72" />
+          <img loading="lazy" decoding="async" src="assets/images/equipo-1.jpg" alt="Obrero con casco de construcción" class="h-56 w-full rounded-xl object-cover md:h-72" />
+          <img loading="lazy" decoding="async" src="assets/images/equipo-2.jpg" alt="Equipo en obra con casco y chaleco de seguridad" class="mt-8 h-56 w-full rounded-xl object-cover md:h-72" />
+          <img loading="lazy" decoding="async" src="assets/images/equipo-3.jpg" alt="Diseñador realizando un render de proyecto" class="h-56 w-full rounded-xl object-cover md:h-72" />
           <img loading="lazy" decoding="async" src="assets/images/empleados-1.jpg" alt="Empleados de INTEGER Desarrollos" class="mt-8 h-56 w-full rounded-xl object-cover md:h-72" />
         </div>
         <div class="reveal">
@@ -374,7 +347,7 @@
             </figcaption>
           </figure>
           <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
-            <video src="assets/videos/Proyecto-playa.mp4" class="h-72 w-full object-cover" autoplay muted loop playsinline preload="metadata" aria-label="Render de proyecto frente al mar"></video>
+            <video src="assets/videos/Proyecto-playa.mp4" class="h-72 w-full object-cover" muted loop playsinline preload="none" aria-label="Render de proyecto frente al mar"></video>
             <div class="pointer-events-none absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink/60 text-gold-light">
               <i class="fa-solid fa-play text-xs"></i>
             </div>
@@ -402,7 +375,7 @@
             </figcaption>
           </figure>
           <figure class="reveal group relative mb-4 overflow-hidden rounded-xl">
-            <video src="assets/videos/Poryectos-destacados.mp4" class="h-96 w-full object-cover" autoplay muted loop playsinline preload="metadata" aria-label="Render de proyectos destacados"></video>
+            <video src="assets/videos/Poryectos-destacados.mp4" class="h-96 w-full object-cover" muted loop playsinline preload="none" aria-label="Render de proyectos destacados"></video>
             <div class="pointer-events-none absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink/60 text-gold-light">
               <i class="fa-solid fa-play text-xs"></i>
             </div>
